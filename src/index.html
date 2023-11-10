@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <div id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -74,7 +75,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -119,7 +120,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
     <div class="container">
         <div class="carousel__inner">
             <div><img src="img/slide_1.jpg" alt="slid_1"></div>
@@ -127,7 +128,7 @@
             <div><img src="img/slide_3.jpg" alt="slide_3"></div>
           </div>
     </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -414,7 +415,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews-comment">
+            <div class="reviews-comment fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_1.png" alt="foto">
                 <div class="reviews-comment__wraper">
                     <div class="reviews-comment__name">Ирина Иванченко </div>
@@ -427,7 +428,7 @@
                 </div>
             </div>
 
-            <div class="reviews-comment">
+            <div class="reviews-comment fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_2.png" alt="foto">
                 <div class="reviews-comment__wraper">
                     <div class="reviews-comment__name">Иван Сёмочкин</div>
@@ -438,7 +439,7 @@
                 </div>
             </div>
 
-            <div class="reviews-comment">
+            <div class="reviews-comment fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
                 <img src="img/feed_3.png" alt="foto">
                 <div class="reviews-comment__wraper">
                     <div class="reviews-comment__name">Юлия Дашкина</div>
@@ -454,8 +455,7 @@
     <footer class="footer">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4268.966893823614!2d24.029080971601335!3d49.8428531076795!
         2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add72f9bc6a89%3A0
-        xf9783fecb4fecf1f!2z0JvRjNCy0ZbQstGB0YzQutCwINCd0LDRhtGW0L7QvdCw0LvRjNC90LAg0J7Qv9C10YDQsA!5e0!3m2!1suk!2sde!4v1699126298092!5m2!1suk!2sde" 
-        width="100%" height="630" style="border:0;" allowfullscreen="" 
+        xf9783fecb4fecf1f!2z0JvRjNCy0ZbQstGB0YzQutCwINCd0LDRhtGW0L7QvdCw0LvRjNC90LAg0J7Qv9C10YDQsA!5e0!3m2!1suk!2sde!4v1699126298092!5m2!1suk!2sde"  
         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
         <div class="footer__info">
@@ -468,13 +468,14 @@
             </div>
         </div>
     </footer>
+    <a href="#up" class="pageup"><img src="icons/up-arrow.png" alt="up" ></a>
 
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/sript.js"></script>
 </body>
 </html>
